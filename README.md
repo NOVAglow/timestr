@@ -9,3 +9,4 @@ TODO
 - [x] Liberate the JavaScript
 - [ ] Make website responsive
 - [ ] Improve visual
+- [ ] Add other formats too (like DD HH MM SS)
