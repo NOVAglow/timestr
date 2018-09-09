@@ -1,3 +1,5 @@
+// @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0
+
 /**
  Convert seconds to long format, from weeks down to seconds
 
@@ -34,3 +36,5 @@ function timestr(s) {
 
     return result;
 }
+
+// @license-end

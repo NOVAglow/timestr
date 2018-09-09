@@ -1,18 +1,26 @@
-function main() {
-    incBtn = document.querySelector("#inc");
-    decBtn = document.querySelector("#dec");
-    sec = document.querySelector("#sec-input");
-    res = document.querySelector("#result");
+// @license magnet:?xt=urn:btih:90dc5c0be029de84e523b9b3922520e79e0e6f08&dn=cc0.txt CC0
 
+function main() {
+    incBtn = document.querySelector("#inc");     // Up arrow (on the website)
+    decBtn = document.querySelector("#dec");     // Down arrow
+    sec = document.querySelector("#sec-input");  // Number of seconds (input <span>)
+    res = document.querySelector("#result");     // timestr() output (output <p>)
+
+    /**
+     Update #result. This function is invoked every time the number of seconds
+     changes.
+     */
     function updateOutput() {
         res.innerHTML = timestr(Number(sec.textContent));
     }
 
+    // Up arrow is clicked -> Increase number of seconds by 1
     incBtn.onclick = function() {
         sec.textContent = Number(sec.textContent) + 1;
         updateOutput();
     };
 
+    // Down arrow is clicked -> Decrease number of seconds by 1
     decBtn.onclick = function() {
         if (sec.textContent == "0") return;
         sec.textContent = Number(sec.textContent) - 1;
@@ -28,8 +36,11 @@ function main() {
     // Time interval (in milliseconds) between automated second changing
     autoSpeed = 500;
 
-    secAuto = undefined;
+    secAuto = undefined;  // Interval
 
+    /**
+     Stop or start changing the number of seconds automatically.
+     */
     function triggerAutoSec() {
         switch (onAuto) {
             case 0:
@@ -57,6 +68,12 @@ function main() {
 
 
     notifyTimeout = undefined;
+
+    /**
+     Update text in #notify-tray, is invoked every time an event happens.
+
+     @param msg {string} Message (string) to be put in #notify-tray
+     */
     function notify(msg) {
         clearTimeout(notifyTimeout);
         document.querySelector("#notif-tray").textContent = msg;
@@ -110,3 +127,5 @@ function main() {
 }
 
 document.addEventListener("DOMContentLoaded", main);
+
+// @license-end
