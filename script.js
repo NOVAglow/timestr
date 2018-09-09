@@ -99,7 +99,9 @@ function main() {
                 break;
 
             case 68:  // D key -> Start decreasing the number of seconds
-                onAuto = 2; triggerAutoSec(); break;
+                onAuto = 2; triggerAutoSec();
+                notify("Automation started, number of seconds is decreasing on its own...");
+                break;
 
             case 80:  // P key -> Manual input for number of seconds
                 userInput = Number(prompt("Enter number of seconds"));
