@@ -1,0 +1,109 @@
+* {
+    font-family: Roboto, sans-serif;
+    color: white;
+}
+
+html, body {
+    width: 100vw;
+    margin: 0px;
+}
+
+body {
+    vertical-align: top;
+    animation: bg-color-cycle 15s infinite;
+}
+
+.container {
+    margin: 10vh auto;
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    text-align: center;
+}
+
+.controls {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.controls > * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.button, span {
+    display: inline-block;
+}
+
+.button {
+    font-size: 100px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+
+#sec-input {
+    margin: 0 40px;
+    font-size: 150px;
+}
+
+p {
+    font-size: 35px;
+}
+
+#dec {
+    -webkit-transform: rotateX(180deg);
+       -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+         -o-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+}
+
+.clock {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    text-align: left;
+}
+
+.info {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    text-align: right;
+}
+
+@-webkit-keyframes bg-color-cycle {
+    0% { background-color: #2196F3; }
+    25% { background-color: #4CAF50; }
+    50% { background-color: #FFC107; }
+    75% { background-color: #FF5722; }
+    100% { background-color: #2196F3; }
+}
+
+@-moz-keyframes bg-color-cycle {
+    0% { background-color: #2196F3; }
+    25% { background-color: #4CAF50; }
+    50% { background-color: #FFC107; }
+    75% { background-color: #FF5722; }
+    100% { background-color: #2196F3; }
+}
+
+@-o-keyframes bg-color-cycle {
+    0% { background-color: #2196F3; }
+    25% { background-color: #4CAF50; }
+    50% { background-color: #FFC107; }
+    75% { background-color: #FF5722; }
+    100% { background-color: #2196F3; }
+}
+
+@keyframes bg-color-cycle {
+    0% { background-color: #2196F3; }
+    25% { background-color: #4CAF50; }
+    50% { background-color: #FFC107; }
+    75% { background-color: #FF5722; }
+    100% { background-color: #2196F3; }
+}
