@@ -24,7 +24,7 @@ TODO
 - [x] Liberate the JavaScript code
 - [ ] Make website responsive
 - [ ] Improve visual
-- [ ] Add other formats too (like DD HH MM SS)
+- [ ] Add formats too (like DD HH MM SS)
 
 License
 -------
