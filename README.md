@@ -11,8 +11,8 @@ minutes, seconds.
 What's in this repository?
 -------------------------
 
-1. `index.html`, `style.css`: HTML and CSS code for http://novaglow.github.io/timestr.
-2. `script.js`: JavaScript script for http://novaglow.github.io/timestr.
+1. `index.html`, `style.css`: HTML and CSS code for http://you-create.github.io/timestr.
+2. `script.js`: JavaScript script for http://you-create.github.io/timestr.
 3. `timestr.js`: Contains function that does the main job of converting. **You
 can use this in your project.**
 4. `LICENSE`: A copy of the CC0 license.
